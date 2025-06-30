@@ -554,261 +554,230 @@ width: 200px;
 
 
 
-/* media query style */
-
-@media only screen and (max-width: 400px)  {
-    .hero-section1{
-        width: 100%;
-    }
-   
-    .footer{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-section {
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    .footer-social{
-        justify-content: center;
-    }
-   
-     .vintage-food{
-        flex-direction: column;
-        align-items: center;
-     }
-
-     .foodie{
-        width: 100%;
-        max-width: 300px;
-        margin-bottom: 20px;
-     }
-
-     .foodie img{
-        width: 100%;
-        height: auto;
-     }
-
- 
-}
-
-
-@media only screen and (max-width: 768px) {
-    .contact-us {
-        flex-direction: column;
-        height: auto;
-        padding: 20px;
-        margin-top: 60px;
-        gap: 30px;
-    }
-
-    .us {
-        flex-direction: column;
-    }
-
-    .reservation1 {
-        width: 100%;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .reservation {
-        width: 100%;
-    }
-
-    .form-group {
-        max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .contact {
-        flex-direction: column;
-        gap: 15px;
-        align-items: center;
-    }
-
-    .contact .phone, 
-    .contact .email {
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
+/* =================== */
+/* GENERAL MEDIA QUERIES */
+/* =================== */
+@media only screen and (max-width: 1200px) {
+    /* Adjust container widths for large tablets */
+    .our-menu, .footer-container {
+        max-width: 95%;
     }
 }
 
-
-/* About us media query */
-
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
+    /* Tablet landscape adjustments */
+    .hero-section1 {
+        height: 70vh;
+    }
+    
+    .content h2 {
+        font-size: 42px;
+    }
+    
+    .content a {
+        width: 30%;
+    }
+    
     .About-us {
         height: auto;
         padding: 40px 0;
     }
-
+    
     .about-content {
         flex-direction: column;
-        align-items: center;
-        gap: 30px;
     }
-
+    
     .title {
         width: 90%;
         height: auto;
-        margin: 10px auto;
     }
+    
+    .contact-us {
+        flex-direction: column;
+        height: auto;
+        padding: 30px;
+        gap: 40px;
+    }
+    
+    .reservation1, .reservation {
+        width: 100%;
+        margin-left: 0;
+    }
+}
 
-    .image-1 {
+@media only screen and (max-width: 768px) {
+    /* Tablet portrait adjustments */
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        padding: 15px 0;
+    }
+    
+    .navbar ul {
+        margin-top: 15px;
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    /* Hero Section */
+    .hero-section1 {
+        height: 60vh;
+    }
+    
+    .content h2 {
+        font-size: 36px;
+    }
+    
+    .content p {
+        font-size: 18px;
+    }
+    
+    .content a {
+        width: 40%;
+        font-size: 16px;
+    }
+    
+    /* Menu Slider */
+    .main {
+        width: calc(200px * 6);
+        animation: slideMobile 25s linear infinite;
+    }
+    
+    .menu {
+        width: 200px;
+        height: 200px;
+    }
+    
+    @keyframes slideMobile {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-200px * 6)); }
+    }
+    
+    /* Chefs Section */
+    .chefs {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .chef-id {
+        width: 80%;
+        margin-bottom: 30px;
+        height: auto;
+    }
+    
+    /* Vintage Week */
+    .vintage-food {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .foodie {
+        width: 45%;
+    }
+    
+    .foodie img {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* Mobile devices */
+    /* Navbar */
+    .navbar ul li a {
+        padding: 10px;
+        font-size: 16px;
+    }
+    
+    /* Hero Section */
+    .hero-section1 {
+        height: 50vh;
+    }
+    
+    .content h2 {
+        font-size: 28px;
+    }
+    
+    .content p {
+        font-size: 16px;
+    }
+    
+    .content a {
+        width: 60%;
+        padding: 8px;
+    }
+    
+    /* About Us */
+    .image-1 {
+        flex-direction: column;
         gap: 15px;
     }
-
+    
     .image-1 img {
         width: 150px;
         height: 150px;
     }
-
-    .video {
-        width: 90%;
-        padding-bottom: 50%;
-    }
-
-    .video video {
-        height: 100%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .About-us {
-        padding: 30px 0;
-    }
-
-    .About-us h4 {
-        font-size: 18px;
-        margin: 15px;
-    }
-
-    .title h3 {
-        font-size: 22px;
-    }
-
-    .title p {
-        font-size: 15px;
-    }
-
-    .image-1 img {
-        width: 120px;
-        height: 120px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    .About-us {
-        padding: 20px 0;
-    }
-
-    .About-us h4 {
-        font-size: 16px;
-        margin: 10px;
-    }
-
-    .title {
-        width: 95%;
-    }
-
-    .title h3 {
-        font-size: 20px;
-    }
-
-    .image-1 {
-        gap: 10px;
-    }
-
-    .image-1 img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .video {
-        width: 95%;
-        padding-bottom: 56.25%; /* Maintain 16:9 aspect ratio */
-    }
-}
-
-/* About us media query ends here */
-/* media query for menu section  */
-@media only screen and (max-width: 768px) {
-    .our-menu {
-        margin: 30px auto;
-        padding: 0 15px;
-    }
-
-    .main {
-        width: calc(180px * 6); 
-        animation: slideMobile 20s linear infinite;
-    }
-
-    .menu {
-        width: 180px; 
-        height: 180px;
-        margin: 0 5px; 
-    }
-
-    .our-menu h4,
-    .our-menu h2 {
-        margin: 20px 15px; 
-        font-size: 18px; 
-    }
-
-    .our-menu h2 {
-        font-size: 22px;
-    }
-
-    .slide-caption {
-        font-size: 14px; /* Smaller caption text */
-        padding: 8px; /* Reduced padding */
-    }
-
-    /* Adjusted animation for smaller items */
-    @keyframes slideMobile {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(calc(-180px * 6));
-        }
-    }
-}
-
-/* Extra small devices (phones, 480px and down) */
-@media only screen and (max-width: 480px) {
+    
+    /* Menu Slider */
     .main {
         width: calc(150px * 6);
-        animation: slideMobileSmall 15s linear infinite; /* Even faster animation */
+        animation: slideSmallMobile 20s linear infinite;
     }
-
+    
     .menu {
         width: 150px;
         height: 150px;
     }
-
-    .our-menu h4 {
-        font-size: 16px;
-        margin: 15px 10px;
+    
+    @keyframes slideSmallMobile {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-150px * 6)); }
     }
-
-    .our-menu h2 {
-        font-size: 20px;
-        margin: 15px 10px;
+    
+    /* Contact Us */
+    .contact {
+        flex-direction: column;
+        gap: 15px;
     }
-
-    /* Further adjusted animation */
-    @keyframes slideMobileSmall {
-        0% {
-            transform: translateX(0);
-        }
-        100% {
-            transform: translateX(calc(-150px * 6));
-        }
+    
+    /* Vintage Week */
+    .vintage-food {
+        flex-direction: column;
+    }
+    
+    .foodie {
+        width: 80%;
+    }
+    
+    /* Footer */
+    .footer-section {
+        flex: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .footer-social {
+        justify-content: center;
     }
 }
+
+@media only screen and (max-width: 400px) {
+    /* Small mobile devices */
+    .content h2 {
+        font-size: 24px;
+    }
+    
+    .content a {
+        width: 80%;
+    }
+    
+    .menu {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .foodie {
+        width: 100%;
+    }
+}
+
+
